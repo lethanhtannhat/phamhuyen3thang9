@@ -83,7 +83,7 @@ def tn(ques1,stt,number_answers):
     radio_buttons = []
     
     for i in range(1, number_answers+1):
-        my_string.append(f'/html/body/div[2]/div/div/main/section/div/div/div/section[{stt}]/div/div/div/div/div[2]/div/div/div[{i}]/div/div/label/span[2]/span/span')
+        my_string.append(f'/html/body/div[2]/div/div/main/div[2]/section/div/div/div/section[{stt}]/div/div/div/div/div[2]/div/div/div[{i}]/div/div/label/span[2]/span/span')
                         #/html/body/div[2]/div/div/main/section/div/div/div/section[1]/div/div/div/div/div[2]/div/div/div[3]/div/div/label/input
                         #/html/body/div[2]/div/div/main/section/div/div/div/section[2]/div/div/div/div/div[2]/div/div/div[5]/div/div/label/span[2]/span/span
         radio_buttons.append(WebDriverWait(driver, 10).until(
@@ -247,7 +247,7 @@ def hk_grid1(*args,stt, colums):
         for i in range(1, colums + 1):
             # XPath tuyệt đối chuẩn theo ảnh cấu trúc mới
             xpath = (
-                f"/html/body/div[2]/div/div/main/section/div/div/div/section[{stt}]"
+                f"/html/body/div[2]/div/div/main/div[2]/section/div/div/div/section[{stt}]"
                 f"/div/div/div/div/div[2]/div/div/div[{k}]/div[2]/div/div/div[{i}]/div/input"
             )
             
@@ -277,7 +277,7 @@ def hk_grid2(*args,stt, colums):
         for i in range(1, colums + 1):
             # XPath tuyệt đối chuẩn theo ảnh cấu trúc mới
             xpath = (
-                f"/html/body/div[2]/div/div/main/section/div/div/div/section"
+                f"/html/body/div[2]/div/div/main/div[2]/section/div/div/div/section"
                 f"/div/div/div/div/div[2]/div/div/div[{k}]/div[2]/div/div/div[{i}]/div/input"
             )
             
