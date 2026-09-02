@@ -67,7 +67,7 @@ def tn1(ques1,stt,number_answers):
     radio_buttons = []
     
     for i in range(1, number_answers+1):
-        my_string.append(f'/html/body/div[2]/div/div/main/section/div/div/div/section/div/div/div/div/div[2]/div/div/div/div/div/label/span[2]/span/span')
+        my_string.append(f'/html/body/div[2]/div/div/main/div[2]/section/div/div/div/section/div/div/div/div/div[2]/div/div/div/div/div/label/span[2]/span/span')
                         #/html/body/div[2]/div/div/main/section/div/div/div/section/div/div/div/div/div[2]/div/div/div/div/div/label/input
         radio_buttons.append(WebDriverWait(driver, 10).until(
             EC.visibility_of_all_elements_located((By.XPATH, my_string[i-1]))
